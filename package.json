@@ -16,7 +16,7 @@
     "gulp-replace": "^0.5.4",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.1.0",
-    "gulp-svg-sprites": "^4.0.2",
+    "gulp-svg-symbols": "^2.0.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-uglify": "^2.0.1",
     "gulp-watch": "^4.3.11"

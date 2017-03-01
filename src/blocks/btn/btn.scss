@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  padding: 57px 221px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 20px;
+  color: $btn-color-text;
+  text-align: center;
+  text-decoration: none;
+  background: $btn-color;
+  border-radius: 67px;
+  
+  &--size-l {
+    padding: 88px 247.5px;
+    font-size: 44px;
+    line-height: 24px;
+    border-radius: 100px;
+  }
+  
+  &--padding-s {
+    margin-top: 40px;
+    padding: 88px 215px;
+  }
+}

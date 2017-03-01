@@ -1,0 +1,33 @@
+.authentication {
+  width: 608px;
+  padding-top: 315px;
+  box-sizing: border-box;
+  
+  &__text {
+    margin-left: 100px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #bcbec2;
+  }
+  
+  &__img {
+    position: relative;
+    
+    &:after {
+      position: absolute;
+      top: 252px;
+      right: 268px;
+      width: 0;
+	  height: 0;
+	  border-left: 35px solid transparent;
+	  border-right: 35px solid transparent;
+	  border-top: 38px solid #dddee0;
+      content: "";
+    }
+  }
+  
+  &__img-card {
+    margin-left: 155px;
+  }
+}
