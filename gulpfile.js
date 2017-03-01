@@ -7,8 +7,10 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
-    svgmin = require('gulp-svgmin'),
-    svgstore = require('gulp-svgstore'),
+    svgSprite = require('gulp-svg-sprites'),
+	svgmin = require('gulp-svgmin'),
+	cheerio = require('gulp-cheerio'),
+	replace = require('gulp-replace'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
@@ -90,10 +92,40 @@ gulp.task('image:build', function () {
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(svgmin()) //Сожмем svg
-        .pipe(svgstore()) //Собираем svg-спрайт
         .pipe(gulp.dest(path.build.img)) //И бросим в build
         .pipe(reload({stream: true}));
+});
+
+//svg assembly
+gulp.task('svg:build', function () {
+	return gulp.src('src/img/alert.svg')
+		// minify svg
+		.pipe(svgmin({
+			js2svg: {
+				pretty: true
+			}
+		}))
+		// remove all fill and style declarations in out shapes
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: { xmlMode: true }
+		}))
+		// cheerio plugin create unnecessary string '>', so replace it.
+		.pipe(replace('&gt;', '>'))
+		// build svg sprite
+		.pipe(svgSprite({
+				mode: "symbols",
+				preview: false,
+				selector: "icon-%f",
+				svg: {
+					symbols: 'symbol_sprite.html'
+				}
+			}
+		))
+		.pipe(gulp.dest('build/img'));
 });
 
 //Fonts assembly
