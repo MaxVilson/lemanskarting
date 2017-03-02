@@ -1,8 +1,47 @@
 .nav {
   display: flex;
-  flex-wrap: wrap;
   
   &__link {
+    position: relative;
+    width: 384px;
+    padding-top: 134px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    outline: 1px solid red;
+  }
+  
+  &__icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding-left: 167px;
+    fill: $color-text;
+  }
+  
+  &__icon-calendar {
+    top: 43px;
+    padding-left: 170px;
+  }
+  
+  &__icon-user {
+    top: 41px;
     
+  }
+  
+  &__icon-cart {
+    top: 35px;
+  }
+  
+  &__icon-flag {
+    top: 52px;
+  }
+  
+  &__text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $header-text;
   }
 }

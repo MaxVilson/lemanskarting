@@ -1,39 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        fill: #e8e8e8;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Info_Icon" data-name="Info Icon" class="cls-1" d="M3182,1896a24,24,0,1,0,24,24A24.006,24.006,0,0,0,3182,1896Zm0,43.2a19.2,19.2,0,1,1,19.19-19.2A19.233,19.233,0,0,1,3182,1939.2Zm-3-23.2h6v16h-6v-16Zm0-8h6v6h-6v-6Z" transform="translate(-3158 -1896)"/>
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="48px" height="48px">
+<path fill-rule="evenodd"  fill="rgb(232, 232, 232)"
+ d="M23.996,47.996 C10.748,47.996 -0.004,37.245 -0.004,23.996 C-0.004,10.749 10.748,-0.003 23.996,-0.003 C37.243,-0.003 47.996,10.749 47.996,23.996 C47.996,37.245 37.243,47.996 23.996,47.996 ZM23.996,4.795 C13.411,4.795 4.794,13.413 4.794,23.996 C4.794,34.581 13.411,43.197 23.996,43.197 C34.579,43.197 43.194,34.581 43.194,23.996 C43.194,13.413 34.579,4.795 23.996,4.795 ZM20.996,19.996 L26.996,19.996 L26.996,35.997 L20.996,35.997 L20.996,19.996 ZM20.996,11.996 L26.996,11.996 L26.996,17.998 L20.996,17.998 L20.996,11.996 Z"/>
 </svg>
