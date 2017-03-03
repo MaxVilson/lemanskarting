@@ -1,47 +1,91 @@
 .nav {
   display: flex;
+  flex-wrap: wrap;
   
   &__link {
     position: relative;
     width: 384px;
-    padding-top: 134px;
-    padding-bottom: 16px;
+    padding-top: 130px;
+    padding-bottom: 39px;
     text-decoration: none;
-    outline: 1px solid red;
+    
+    &--active:after {
+      position: absolute;
+      bottom: 0;
+      width: 384px;
+      height: 8px;
+      background: $btn-color;
+      content: "";
+    }
   }
   
   &__icon {
     position: absolute;
     width: 100px;
     height: 100px;
-    padding-left: 167px;
+    padding-left: 170px;
     fill: $color-text;
+    
+    &--active {
+      fill: $btn-color-text;
+    }
   }
   
   &__icon-calendar {
-    top: 43px;
-    padding-left: 170px;
+    top: 42px;
+    padding-left: 168px;
   }
   
   &__icon-user {
     top: 41px;
-    
   }
   
   &__icon-cart {
     top: 35px;
   }
   
+  &__icon-number {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    margin-left: 158px;
+    font-size: 36px;
+    font-weight: 700;
+    color: $color-text;
+    border: 6px solid $color-text;
+    border-radius: 100%;
+    
+    &--active {
+      border-color: $btn-color-text;
+      color: $btn-color-text;
+    }
+  }
+  
   &__icon-flag {
-    top: 52px;
+    top: 51px;
+    padding-left: 172px;
   }
   
   &__text {
+    position: relative;
     text-align: center;
     font-size: 24px;
     font-weight: 600;
     line-height: 24px;
     text-transform: uppercase;
     color: $header-text;
+    
+    &--active {
+      color: $btn-color-text;
+    }
+  }
+  
+  &__icon-check {
+    position: absolute;
+    left: 0;
   }
 }

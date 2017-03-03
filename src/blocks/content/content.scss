@@ -1,0 +1,61 @@
+.content {
+  
+  
+  &__title {
+    margin-top: 50px;
+    font-size: $font-size--h2;
+    font-weight: 700;
+    color: $btn-color-text;
+    text-align: center;
+  }
+  
+  &__items {
+    display: flex;
+    margin-top: 64px;
+    padding: 0 225px;
+  }
+  
+  &__item {
+    margin-right: 63px;
+    padding: 70px 86.5px;
+    padding-bottom: 56px;
+    color: $color-text;
+    text-align: center;
+    background: $main-color;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    &--active {
+      background: $content-color--active;
+    }
+  }
+  
+  &__item-number {
+    font-size: 80px;
+    line-height: 70px;
+  }
+  
+  &__item-mounth {
+    font-size: 36px;
+    line-height: 90px;
+  }
+  
+  &__item-day {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  
+  &__btn {
+    margin-top: 120px;
+    margin-left: 672px;
+  }
+  
+  &__text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: $color-text;
+    text-align: center;
+  }
+}
