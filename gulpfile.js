@@ -8,13 +8,23 @@ var gulp = require('gulp'),
     cssmin = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     svgSymbols = require('gulp-svg-symbols'),
+    svgstore = require('gulp-svgstore'),
 	svgmin = require('gulp-svgmin'),
 	cheerio = require('gulp-cheerio'),
 	replace = require('gulp-replace'),
+    rename = require('gulp-rename'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
-    browserSync = require("browser-sync"),
+    size = require('gulp-size'),
+    browserSync = require('browser-sync'),
     reload = browserSync.reload;
+
+var $ = {
+	gutil: require('gulp-util'),
+	svgSprite: require('gulp-svg-sprite'),
+	svg2png: require('gulp-svg2png'),
+	size: require('gulp-size'),
+}
 
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -96,30 +106,30 @@ gulp.task('image:build', function () {
         .pipe(reload({stream: true}));
 });
 
-//svg assembly
+// Сборка SVG-спрайта для блока sprite-svg--localstorage
 gulp.task('svg:build', function () {
-	return gulp.src('src/img/*.svg')
-		// minify svg
-		.pipe(svgmin({
-			js2svg: {
-				pretty: true
-			}
-		}))
-		// build svg sprite
-		.pipe(svgSymbols())
-    	// remove all fill and style declarations in out shapes
-		.pipe(cheerio({
-			run: function ($) {
-				$('[fill]').removeAttr('fill');
-				$('[style]').removeAttr('style');
-                $('svg').attr('style', 'display:none');
-			},
-			parserOptions: { xmlMode: true }
-		}))
-        // cheerio plugin create unnecessary string '>', so replace it.
-		.pipe(replace('&gt;', '>'))
-		.pipe(gulp.dest('build/img'));
-});
+  return gulp.src('src/img/*.svg')
+      .pipe(svgmin(function (file) {
+        return {
+          plugins: [{
+            cleanupIDs: {
+              minify: true
+            }
+          }]
+        }
+      }))
+      .pipe(svgstore({ inlineSvg: true }))
+      .pipe(cheerio(function ($) {
+        $('svg').attr('style',  'display:none');
+      }))
+      .pipe(rename('sprite-svg--ls.svg'))
+      .pipe(size({
+        title: 'Размер',
+        showFiles: true,
+        showTotal: false,
+      }))
+      .pipe(gulp.dest(path.build.img))
+  });
 
 //Fonts assembly
 gulp.task('fonts:build', function() {
