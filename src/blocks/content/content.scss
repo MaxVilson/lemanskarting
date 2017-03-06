@@ -78,8 +78,45 @@
     margin-top: 35px;
     font-size: 18px;
   }
+  
+  &__wrapper {
+    margin-top: 44px;
+  }
 
   &__numbers {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    list-style: none;
+    
+    &:last-child {
+      margin: 0;
+    }
+  }
+  
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    margin-right: 32px;
+    font-size: 40px;
+    color: $color-text;
+    background: $main-color;
+    border-radius: 100%;
+    cursor: pointer;
+    
+    &_active {
+      color: #c3bda7;
+      background: $content-color--active;
+    }
+    
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
