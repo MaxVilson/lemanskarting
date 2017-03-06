@@ -22,3 +22,19 @@
     padding: 88px 209px;
   }
 }
+
+.btn-back {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $main-color--dark;
+  border-radius: 100%;
+  fill: #4f4f4f;
+  
+  &__icon {
+    width: 26px;
+    height: 39px;
+  }
+}
