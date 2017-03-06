@@ -1,0 +1,50 @@
+.footer {
+  
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__btn {
+    margin-top: 120px;
+    margin-right: 150px;
+  }
+  
+  &__btn-back {
+    width: 96px;
+    height: 96px;
+    margin-top: 141px;
+    margin-right: 32px;
+    margin-left: 28px;
+  }
+  
+  &__text {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: $color-text;
+    text-align: center;
+    
+    &_regular {
+      font-weight: 400;
+    }
+  }
+  
+  &__text-icon {
+    position: absolute;
+    top: 6px;
+    left: 520px;
+    width: 48px;
+    height: 48px;
+    fill: #4f4f4f;
+  }
+  
+  &__text-icon_left_503 {
+    left: 503px;
+  }
+  
+  &__text-icon_left_650 {
+    left: 650px;
+  }
+}
