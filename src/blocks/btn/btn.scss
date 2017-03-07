@@ -7,7 +7,7 @@
   color: $btn-color-text;
   text-align: center;
   text-decoration: none;
-  background: $btn-color;
+  background: $main-color--dark;
   border-radius: 67px;
   
   &--size-l {
@@ -20,6 +20,10 @@
   &--padding-s {
     margin-top: 40px;
     padding: 88px 209px;
+  }
+
+  &_active {
+    background: $btn-color;
   }
 }
 
@@ -36,5 +40,9 @@
   &__icon {
     width: 26px;
     height: 39px;
+  }
+
+  &_active {
+    background: $btn-color;
   }
 }

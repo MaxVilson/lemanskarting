@@ -1,0 +1,68 @@
+.table-select-time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 64px;
+
+	&__list {
+		width: 1091px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__item {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 112px;
+		width: 160px;
+		margin-right: 25px;
+		margin-bottom: 20px;
+		font-family: $font-lato;
+		font-size: 24px;
+		color: $color-text;
+		background: $main-color;
+		border-radius: 10px;
+		cursor: pointer;
+
+		&:after {
+			position: absolute;
+			top: 48%;
+			right: -14px;
+			z-index: -1;
+			width: 187px;
+			height: 4px;	
+			background: #cacaca;
+			transform: rotate(34deg);
+			content: "";
+		}
+
+		&:nth-child(6n) {
+			margin-right: 0;
+		}
+
+		&:nth-child(n+19) {
+			margin-bottom: 0;
+		}
+
+		&_booked {
+			background: $table-item_active;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&__number {
+		position: absolute;
+		top: 11px;
+		right: 12px;
+		font-size: 18px;
+	}
+}
