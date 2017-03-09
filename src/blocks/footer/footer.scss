@@ -70,4 +70,12 @@
     top: -6px;
     left: 600px;
   }
+
+  &__link {
+    display: block;
+    margin-top: 25px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
