@@ -47,6 +47,10 @@
       margin-top: 40px;
       font-weight: 400;
     }
+    
+    &_dark {
+      color: $btn-color-text;
+    }
   }
   
   &__text-icon {

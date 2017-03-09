@@ -23,29 +23,25 @@
     font-weight: 600;
     line-height: 80px;
     color: $color-text;
+  }
     
-    &:before {
-      position: absolute;
-      left: 0;
-      top: 20px;
-      width: 40px;
-      height: 40px;
-      background: $btn-color;
-      border-radius: 100%;
-      content: '';
-    }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: $btn-color;
+    border-radius: 100%;
+  }
     
-    &:after {
-      position: absolute;
-      left: 11px;
-      top: 31px;
-      width: 13px;
-      height: 5px;
-      border: 3px solid #fff;
-      border-top-color: transparent;
-      border-right-color: transparent;
-      transform: rotate(-50deg);
-      content: '';
-    }
+  &__icon-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
   }
 }

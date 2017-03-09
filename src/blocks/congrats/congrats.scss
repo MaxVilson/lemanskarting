@@ -1,31 +1,39 @@
 .congrats {
-	text-align: center;
-
-	&__title {
-		position: relative;
-		margin-top: 130px;
-		margin-bottom: 66px;
-		font-size: 72px;
-		font-weight: 700;
-		color: $btn-color-text;
-	}
-
-	&__icon {
-		position: relative;
-		display: flex;
-		justify-content: center;
+  text-align: center;
+  
+  &__title {
+    position: relative;
+    margin-top: 130px;
+    margin-bottom: 66px;
+    font-size: 72px;
+    font-weight: 700;
+    color: $btn-color-text;
+  }
+  
+  &__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 240px;
     height: 240px;
     margin: 0 auto;
     background: $btn-color;
     border-radius: 100%;
     content: '';
-	}
-
-	&__text {
-		font-size: 44px;
-		font-weight: 600;
-		line-height: 56px;
-		color: $color-text;
-	}
+  }
+  
+  &__icon-mark {
+    width: 120px;
+    height: 120px;
+    fill: #fff;
+  }
+  
+  &__text {
+    margin-bottom: 65px;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 56px;
+    color: $color-text;
+  }
 }

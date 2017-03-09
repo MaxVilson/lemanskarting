@@ -110,7 +110,7 @@
     border-radius: 100%;
     cursor: pointer;
     
-    &_active {
+    &:active {
       color: #c3bda7;
       background: $content-color--active;
     }

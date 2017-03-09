@@ -1,0 +1,15 @@
+.registration {
+  
+  &__link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    color: $color-text;
+  }
+  
+  &__link-icon {
+    width: 40px;
+    height: 40px;
+    fill: red;
+  }
+}
