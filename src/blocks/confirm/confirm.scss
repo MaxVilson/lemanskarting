@@ -1,0 +1,51 @@
+.confirm {
+
+  &__title {
+    width: 100%;
+    margin-top: 185px;
+    font-size: 72px;
+    font-weight: 700;
+    color: $btn-color-text;
+    text-align: center;
+  }
+  
+  &__list {
+    margin-top: 58px;
+    margin-left: 570px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  &__item {
+    position: relative;
+    padding-left: 89px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 80px;
+    color: $color-text;
+    
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 40px;
+      height: 40px;
+      background: $btn-color;
+      border-radius: 100%;
+      content: '';
+    }
+    
+    &:after {
+      position: absolute;
+      left: 11px;
+      top: 31px;
+      width: 13px;
+      height: 5px;
+      border: 3px solid #fff;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      transform: rotate(-50deg);
+      content: '';
+    }
+  }
+}

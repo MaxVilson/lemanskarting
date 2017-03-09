@@ -57,12 +57,25 @@
 				display: none;
 			}
 		}
+      
+      &_active {
+        background: $btn-color--lighten;
+        
+        &:after {
+		  display: none;
+		}
+      }
 	}
 
 	&__number {
-		position: absolute;
-		top: 11px;
-		right: 12px;
-		font-size: 18px;
+      position: absolute;
+      top: 11px;
+      right: 12px;
+      font-size: 18px;
+      
+      &_left {
+        left: 9px;
+        right: 0;
+      }
 	}
 }
