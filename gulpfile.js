@@ -121,6 +121,8 @@ gulp.task('svg:build', function () {
       .pipe(svgstore({ inlineSvg: true }))
       .pipe(cheerio(function ($) {
         $('svg').attr('style',  'display:none');
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
       }))
       .pipe(rename('sprite-svg--ls.svg'))
       .pipe(size({
