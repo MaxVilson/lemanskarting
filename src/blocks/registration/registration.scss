@@ -1,15 +1,24 @@
 .registration {
   
   &__link {
+    position: relative;
+    display: inline-block;;
+    margin-top: 60px;
+    margin-left: 72px;
+    padding-left: 60px;
     font-size: 36px;
     font-weight: 700;
     line-height: 60px;
     color: $color-text;
+    text-decoration: none;
   }
   
   &__link-icon {
+    position: absolute;
+    top: 10px;
+    left: 0;
     width: 40px;
     height: 40px;
-    fill: red;
+    fill: $color-text;
   }
 }
