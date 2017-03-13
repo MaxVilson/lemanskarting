@@ -1,4 +1,4 @@
-
+// https://benfrain.com/creating-a-custom-input-cursorcaret/
 // Communicate to DOM that we have JS
 
 document.documentElement.setAttribute("class", "js");
