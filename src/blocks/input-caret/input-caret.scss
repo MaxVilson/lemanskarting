@@ -1,11 +1,22 @@
 .input-caret {
   position: relative;
-  display: flex;
+  display: inline-flex;
   width: 820px;
   height: 100px;
-  padding: 5px 70px 5px 5px;
-  border-bottom: 6px solid #000;
+  margin-right: 80px;
+  margin-left: 100px;
+  padding-bottom: 20px;
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 60px;
+  color: $color-text;
+  text-align: center;
+  border-bottom: 6px solid $main-color;
   overflow: hidden;
+
+  &:nth-child(2) {
+    margin-left: 0;
+  }
 
   &__input {
 	appearance: none;
@@ -27,14 +38,14 @@
     background-color: #e4e4e4;
     border-right: 3px solid transparent;
     
-	.js & {
-		display: flex;
-	}
+	  .js & {
+		  display: flex;
+	  }
+  }
     
-   .input-caret__input:focus ~ & {
-     animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
-    }
-}
+  .input-caret__input:focus ~ & {
+    animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+  }
 
   &__label {
     position: absolute;
