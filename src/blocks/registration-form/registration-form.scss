@@ -1,43 +1,119 @@
 .registration-form {
-	font-size: 0;
+  margin-top: 90px;
+  font-size: 0;
+  
+  &__wrapper {
+    padding-bottom: 82px;
+    background: $main-color;
+  }
 
-	&__input {
-		width: 820px;
-		display: inline-block;
-		margin-right: 80px;
-		margin-left: 100px;
-		padding-bottom: 20px;
-		font-size: 88px;
-		font-weight: 600;
-		line-height: 60px;
-		color: $color-text;
-		text-align: center;
-		border: none;
-		border-bottom: 6px solid $main-color;
+  &__input {
+    width: 820px;
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 60px;
+    color: $color-text;
+    text-align: center;
+    border: none;
+    border-bottom: 6px solid $main-color;
 
-		&:nth-child(2) {
-			margin-left: 0;
-		}
-	}
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+  }
 
-	&__keyboard {
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 60px;
-		background: $main-color;
-	}
+  &__keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-left: 134px;
+    
+    &_padding_big {
+      padding-left: 134 + 87px;
+    }
+  }
+  
+  &__second-line {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+  }
+  
+  &__third-line {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 133px;
+  }
 
-	&__key {
-		width: 114px;
-		height: 114px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-right: 24px;
-		margin-bottom: 16px;
-		font-size: 36px;
-		font-weight: 700;
-		color: $color-text;
-		background: $color-key;
-	}
+  &__key {
+    position: relative;
+    width: 114px;
+    height: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-weight: 700;
+    color: $color-text;
+    background: $color-key;
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px 0px rgba(137, 139, 141, 1);
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &:active {
+      background: $btn-color--lighten;
+      box-shadow: 0px 1px 0px 0px rgba(137, 139, 141, 1);
+    }
+    
+    &_dark {
+      background: $color-key_dark;
+      
+      &:active {
+        background: $color-key_dark;
+      }
+    }
+  }
+
+  &__key-icon {
+    fill: #fff;
+    width: 54px;
+    height: 38px;
+  }
+  
+  &__key-icon-cross {
+    position: absolute;
+    left: 53px;
+    width: 19px;
+    height: 18px;
+    fill: $color-key_dark;
+  }
+  
+  &__key-icon-globe {
+    width: 48px;
+    height: 48px;
+    fill: #fff;
+  }
+  
+  &__key-icon-space {
+    width: 34px;
+    height: 9px;
+    fill: $color-text;
+  }
+  
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 43px;
+    border: none;
+  }
 }
