@@ -10,7 +10,13 @@
       <input id="Input" class="input-caret__input" value=""> <span class="input-caret__span" dir="rtl"></span>
       <label class="input-caret__label" for="Input">Код</label>
   	</div>
-  	<div class="registration-number__example-text">Номер в формате: +7 910 XXX XX XX</div>
+  	<div class="registration-number__example-text  registration-number__example-text-eror">
+      <svg class="registration-number__icon-eror">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#warning"></use>
+      </svg>
+  	  Номер не может начинаться на 0
+      Введите правильный номер
+    </div>
   	<input type="submit" class="btn  registration-number__btn" value="Далее">
   </div>
   <div class="registration-number__keyboards">

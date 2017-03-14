@@ -36,7 +36,8 @@
     font-weight: 600;
     line-height: 60px;
     background-color: #e4e4e4;
-    border-right: 3px solid transparent;
+    border-right: 6px solid $btn-color;
+    border-radius: 3px;
     
 	  .js & {
 		  display: flex;
@@ -64,6 +65,25 @@
     
   &__input:not([value=""]) ~ & {
     right: -100000px;
+  }
+  
+  &__icon-erase {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    fill: $color-text;
+    width: 54px;
+    height: 38px;
+    cursor: pointer;
+  }
+  
+  &__icon-cross {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 19px;
+    height: 18px;
+    fill: #fff;
   }
 }  
 
