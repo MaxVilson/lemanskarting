@@ -59,15 +59,17 @@
     line-height: 35px;
   }
   
-  &__item-img-child {
+  &__img-child {
     margin-top: 58px;
     margin-bottom: 15px;
     margin-left: 119px;
+    fill: $color-text;
   }
   
-  &__item-img-man {
+  &__img-man {
     margin-top: 73px;
     margin-left: 100px;
+    fill: $color-text;
   }
   
   &__item-text {

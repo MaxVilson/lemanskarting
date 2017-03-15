@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 58px 221px;
+  padding: 70px 273px;
   font-size: 40px;
   font-weight: 800;
   line-height: 20px;
@@ -8,22 +8,30 @@
   text-align: center;
   text-decoration: none;
   background: $main-color--dark;
-  border-radius: 67px;
+  border-radius: 80px;
   
-  &--size-l {
+  &_big {
     padding: 88px 244px;
     font-size: 44px;
     line-height: 24px;
     border-radius: 100px;
   }
   
-  &--padding-s {
+  &_padding_s {
     margin-top: 40px;
     padding: 88px 209px;
   }
 
-  &_padding-xs {
-    padding: 57.5px 143px;
+  &_padding_xs {
+    padding: 70px 195px;
+  }
+  
+  &_padding_md {
+    padding: 70px 265px;
+  }
+  
+   &_padding_xl {
+    padding: 70px 311px;
   }
 
   &_active {
