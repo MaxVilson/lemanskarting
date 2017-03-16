@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Леманс картинг</title>
+</head>
+<body>
+
+<div class="registration">
+  <a href="#" class="registration__link">
+    <svg class="registration__link-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow"></use>
+    </svg>
+    Назад
+  </a>
+	<form action="form.php" method="get" class="registration-number">
+	  <div class="registration-number__data-input">
+	  	<div class="input-caret  registration-number__input-caret">
+	      <svg class="input-caret__icon-erase">
+	        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#erase"></use>
+	      </svg>
+	      <svg class="input-caret__icon-cross">
+	        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cross"></use>
+	      </svg>
+	      <input id="Input" class="input-caret__input" value=""> <span class="input-caret__span" dir="rtl"></span>
+	      <label class="input-caret__label" for="Input"></label>
+	  	</div>
+	  	<div class="registration-number__example-text">
+	      Введите код, отправленный на номер 
+	      <div class="registration-number__example-phone">+7 910 612 83 44</div>
+	  	</div>
+	  	<div class="registration-number__btn-wrapper">
+	      <svg class="circle-progress  registration-number__circle-progress" xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+	        <circle cx="16" cy="16" r="15" class="circle-progress__background" />
+	        <circle cx="16" cy="16" r="15" class="circle-progress__progress  js-circle__progress" />
+	      </svg>
+	  	  <input type="submit" class="btn  btn_active  registration-number__btn" value="Далее">
+	    </div>
+	  </div>
+	  <div class="registration-number__keyboards">
+	    <div class="registration-number__key">1</div>
+	    <div class="registration-number__key">2</div>
+	    <div class="registration-number__key">3</div>
+	    <div class="registration-number__key">4</div>
+	    <div class="registration-number__key">5</div>
+	    <div class="registration-number__key">6</div>
+	    <div class="registration-number__key">7</div>
+	    <div class="registration-number__key">8</div>
+	    <div class="registration-number__key">9</div>
+	    <div class="registration-number__key  registration-number__key_center">0</div>
+	  </div>
+	</form>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

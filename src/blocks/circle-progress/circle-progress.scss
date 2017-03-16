@@ -1,0 +1,24 @@
+$countdown-stroke-width: 4;
+
+.circle-progress {
+  position: absolute;
+  height: 74px;
+  transform: rotate(-90deg);
+  width: 74px;
+}
+
+.circle-progress__background {
+  fill: none;
+  stroke: #ffde61;
+  stroke-width: $countdown-stroke-width;
+}
+
+.circle-progress__progress {
+  fill: none;
+  stroke: #f1f1f1;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-width: $countdown-stroke-width;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
