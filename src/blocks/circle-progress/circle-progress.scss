@@ -1,24 +1,18 @@
-$countdown-stroke-width: 4;
-
 .circle-progress {
-  position: absolute;
+  fill: none;
+  stroke-width: 9;
+  width: 74px;
   height: 74px;
   transform: rotate(-90deg);
-  width: 74px;
-}
+ 
+  &__background {
+    stroke: #ffde61;
+  }
 
-.circle-progress__background {
-  fill: none;
-  stroke: #ffde61;
-  stroke-width: $countdown-stroke-width;
-}
-
-.circle-progress__progress {
-  fill: none;
-  stroke: #f1f1f1;
-  stroke-dasharray: 100 100;
-  stroke-dashoffset: 100;
-  stroke-linecap: round;
-  stroke-width: $countdown-stroke-width;
-  transition: stroke-dashoffset 1s ease-in-out;
+  &__sector {
+    stroke: #f1f1f1;
+    stroke-dasharray: 188;
+    stroke-dashoffset: 160;
+    transition: all 1s;
+  }
 }

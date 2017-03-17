@@ -39,8 +39,9 @@
   }
   
   &__circle-progress {
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 135px;
   }
   
   &__keyboards {
