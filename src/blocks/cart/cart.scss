@@ -1,0 +1,40 @@
+.cart {
+  position: relative;
+  
+  &__wheels {
+    position: absolute;
+    top: 55px;
+    right: 128.5px;
+    z-index: 1;
+    width: 65px;
+    height: 70px;
+    fill: #51444f;
+  }
+  
+  &__car {
+    position: relative;
+    z-index: 2;
+    width: 52px;
+    height: 106px;
+    margin-top: 37px;
+    fill: #3d9f44;
+    
+    &_adult {
+      fill: #ffcd11;
+    }
+    
+    &_club {
+      fill: #fc501a;
+    }
+  }
+  
+  &__cabin {
+    position: absolute;
+    top: 80px;
+    right: 154px;
+    z-index: 3;
+    width: 14px;
+    height: 30px;
+    fill: #2a362a;
+  }
+}
