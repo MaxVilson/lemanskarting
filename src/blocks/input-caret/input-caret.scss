@@ -31,21 +31,22 @@
     display: none;
     align-items: center;
     max-width: 80%;
+    padding-right: 10px;
     border: 0;
     font-size: 88px;
     font-weight: 600;
     line-height: 60px;
-    background-color: #e4e4e4;
-    border-right: 6px solid $btn-color;
+    background-color: transparent;
+    border-right: 6px solid transparent;
     border-radius: 3px;
     
 	  .js & {
 		  display: flex;
 	  }
-  }
     
-  .input-caret__input:focus ~ & {
-    animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+    .input-caret__input:focus ~ & {
+      animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+    }
   }
 
   &__label {
@@ -89,6 +90,6 @@
 
 @keyframes pulseAttention {
     50% {
-        border-color: orange;
+        border-color: $btn-color;
     }
 }
