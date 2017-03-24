@@ -20,6 +20,7 @@
     text-align: center;
     border: none;
     border-bottom: 6px solid $main-color;
+    user-select: none;
 
     &:nth-child(2) {
       margin-left: 0;
@@ -64,7 +65,10 @@
     color: $color-text;
     background: $color-key;
     border-radius: 10px;
-    box-shadow: 0px 2px 0px 0px rgba(137, 139, 141, 1);
+    box-shadow: 0px 6px 0px 0px rgba(137, 139, 141, 1);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s cubic-bezier(.09, 1.17, .51, .98);
     
     &:last-child {
       margin-right: 0;
@@ -73,6 +77,7 @@
     &:active {
       background: $btn-color--lighten;
       box-shadow: 0px 1px 0px 0px rgba(137, 139, 141, 1);
+      transform: translate(0px, 6px);
     }
     
     &_dark {

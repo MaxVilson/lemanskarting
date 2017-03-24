@@ -24,11 +24,12 @@
 		margin-right: 25px;
 		margin-bottom: 20px;
 		font-family: $font-lato;
-		font-size: 24px;
+		font-size: 34px;
 		color: $color-text;
 		background: $main-color;
 		border-radius: 10px;
 		cursor: pointer;
+		user-select: none;
 
 		&:after {
 			position: absolute;
@@ -69,9 +70,9 @@
 
 	&__number {
       position: absolute;
-      top: 11px;
+      top: 2px;
       right: 12px;
-      font-size: 18px;
+      font-size: 26px;
       
       &_left {
         left: 9px;

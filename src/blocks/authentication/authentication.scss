@@ -19,15 +19,18 @@
       top: 252px;
       right: 268px;
       width: 0;
-	  height: 0;
-	  border-left: 35px solid transparent;
-	  border-right: 35px solid transparent;
-	  border-top: 38px solid #dddee0;
+	    height: 0;
+	    border-left: 35px solid transparent;
+	    border-right: 35px solid transparent;
+	    border-top: 38px solid #dddee0;
       content: "";
     }
   }
   
   &__img-card {
+    width: 298px;
+    height: 223px;
     margin-left: 155px;
+    fill: #dddee0;
   }
 }

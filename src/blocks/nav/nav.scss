@@ -8,6 +8,8 @@
     padding-top: 130px;
     padding-bottom: 39px;
     text-decoration: none;
+    cursor: pointer;
+    user-select: none;
     
     &_active:after {
       position: absolute;

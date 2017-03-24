@@ -11,6 +11,8 @@
     line-height: 60px;
     color: $color-text;
     text-decoration: none;
+    cursor: pointer;
+    user-select: none;
   }
   
   &__link-icon {

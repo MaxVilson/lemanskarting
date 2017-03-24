@@ -37,6 +37,7 @@
     line-height: 28px;
     color: $color-text;
     text-align: center;
+    user-select: none;
     
     &_regular {
       margin-top: 40px;
@@ -76,5 +77,6 @@
     padding-top: 25px;
     text-transform: uppercase;
     text-decoration: none;
+    user-select: none;
   }
 }

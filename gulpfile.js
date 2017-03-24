@@ -123,6 +123,7 @@ gulp.task('svg:build', function () {
         $('svg').attr('style',  'display:none');
         $('[fill]').removeAttr('fill');
         $('[stroke]').removeAttr('stroke');
+        $('[opacity]').removeAttr('opacity');
       }))
       .pipe(rename('sprite-svg--ls.svg'))
       .pipe(size({

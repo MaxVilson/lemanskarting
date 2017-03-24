@@ -61,6 +61,8 @@
     color: $color-text;
     background: $main-color;
     border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
     
     &:nth-child(3n) {
       margin-right: 0;
