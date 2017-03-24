@@ -17,7 +17,8 @@ var gulp = require('gulp'),
     rimraf = require('rimraf'),
     size = require('gulp-size'),
     browserSync = require('browser-sync'),
-    reload = browserSync.reload;
+    reload = browserSync.reload,
+    htmlmin = require('gulp-htmlmin');
 
 var $ = {
 	gutil: require('gulp-util'),
@@ -66,6 +67,7 @@ var config = {
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
         .pipe(rigger()) //Прогоним через rigger
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
 });
