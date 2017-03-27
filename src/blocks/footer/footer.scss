@@ -9,6 +9,10 @@
     margin-top: 100px;
     margin-right: 150px;
 
+    &_margin_40 {
+      margin-top: 40px;
+    }
+
     &_margin_60 {
       margin-top: 60px;
     }
@@ -25,6 +29,10 @@
     margin-right: 32px;
     margin-left: 28px;
 
+    &_margin_80 {
+      margin-top: 80px;
+    }
+
     &_margin_100 {
       margin-top: 100px;
     }
@@ -34,7 +42,7 @@
     position: relative;
     font-size: 24px;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 1.5em;
     color: $color-text;
     text-align: center;
     user-select: none;
@@ -42,6 +50,10 @@
     &_regular {
       margin-top: 40px;
       font-weight: 400;
+    }
+
+    &_display_none {
+      display: none;
     }
     
     &_dark {
@@ -67,7 +79,7 @@
   }
   
   &__text-icon_left_600 {
-    top: -6px;
+    top: -8px;
     left: 600px;
   }
 

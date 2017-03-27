@@ -1,5 +1,6 @@
 .cart {
   position: relative;
+  padding-top: 37px;
   
   &__wheels {
     position: absolute;
@@ -16,7 +17,6 @@
     z-index: 2;
     width: 52px;
     height: 106px;
-    margin-top: 37px;
     fill: #3d9f44;
     
     &_adult {

@@ -8,6 +8,10 @@
     color: $btn-color-text;
     text-align: center;
     user-select: none;
+
+    &_mt_20 {
+      margin: 20px;
+    }
   }
   
   &__items {
@@ -77,6 +81,10 @@
   &__item-text {
     margin-top: 20px;
     font-size: 36px;
+
+    &_sm {
+      line-height: 3em;
+    }
   }
   
   &__item-description {
@@ -116,7 +124,7 @@
     cursor: pointer;
     user-select: none;
     
-    &:active {
+    &_active {
       color: #c3bda7;
       background: $content-color--active;
     }

@@ -14,12 +14,12 @@
     position: relative;
     margin-top: 30px;
     font-size: 36px;
-    line-height: 48px;
+    line-height: 1.5em;
     font-weight: 600;
     color: $color-text;
   }
   
-  &__example-text-eror {
+  &__example-text-error {
     padding-left: 84px;
   }
   
@@ -78,8 +78,9 @@
     }
   }
 
-  &__icon-eror {
+  &__icon-error {
     position: absolute;
+    top: 5px;
     left: 0;
     width: 48px;
     height: 48px;
