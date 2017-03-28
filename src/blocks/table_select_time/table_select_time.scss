@@ -26,14 +26,14 @@
 		margin-bottom: 20px;
 		font-family: $font-lato;
 		font-size: 34px;
-		color: $header-text;
+		color: $color-text;
 		background: $main-color;
 		border-radius: 10px;
 		cursor: pointer;
 		user-select: none;
 
 		&_opacity {
-			opacity: .5;
+			opacity: .4;
 		}
 
 		&:after {
