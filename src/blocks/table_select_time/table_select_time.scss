@@ -3,10 +3,10 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding-top: 40px;
+	padding-top: 64px;
 
 	&__list {
-		width: 1091px;
+		width: 1480px;
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0;
@@ -46,14 +46,6 @@
 			background: #cacaca;
 			transform: rotate(34deg);
 			content: "";
-		}
-
-		&:nth-child(6n) {
-			margin-right: 0;
-		}
-
-		&:nth-child(n+19) {
-			margin-bottom: 0;
 		}
 
 		&_booked {
